@@ -1,0 +1,6 @@
+framework module Pods_UNUMTestApp {
+  umbrella header "Pods-UNUMTestApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
