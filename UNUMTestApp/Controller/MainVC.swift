@@ -13,8 +13,11 @@ class MainVC: UIViewController {
     
     @IBOutlet weak var petTableView: UITableView!
     
-    var dogbreedArray: [DogBreedModel] = [DogBreedModel]()
+    @IBOutlet weak var settingsbtn: UIButton!
+    @IBOutlet weak var headLabel: UILabel!
+    @IBOutlet weak var upperView: UIView!
     
+    var dogbreedArray: [DogBreedModel] = [DogBreedModel]()
     var indicator = UIActivityIndicatorView()
     let loadingView: UIView = UIView()
     
@@ -28,7 +31,7 @@ class MainVC: UIViewController {
         
         petTableView.delegate = self
         petTableView.dataSource = self
-        
+                
         DispatchQueue.global(qos: .userInteractive).async {
             self.downloadDetails {
                 DispatchQueue.main.async {
@@ -36,6 +39,17 @@ class MainVC: UIViewController {
                 }
             }
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        DispatchQueue.main.async {
+            self.upperView.backgroundColor = Theme.current.cellBg
+            self.headLabel.textColor = Theme.current.textColor
+            self.settingsbtn.tintColor = Theme.current.iconColor
+            self.petTableView.reloadData()
+        }
+
+        
     }
     
     func setUpActivityIndicator() {

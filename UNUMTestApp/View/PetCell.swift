@@ -18,9 +18,13 @@ class PetCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
     
     func configureCell(petDataObj: DogBreedModel) {
+        
+        self.breed.textColor = Theme.current.textColor
+        self.backgroundColor = Theme.current.cellBg
         
         if let url = URL(string: petDataObj.imageURL) {
             
@@ -37,9 +41,11 @@ class PetCell: UITableViewCell {
                     else {
                         if let _img = _image {
                             DispatchQueue.main.async {
+                                let r_image = _img.resizeImage(image: _img, newSize: CGSize(width: self.bounds.size.width, height: 220))
                                 self.breed.text = petDataObj.breed.capitalizingFirstLetter()
-                                self.imageCache.setObject(_img, forKey: url as AnyObject)
-                                self.petImage.image = _img
+                                self.imageCache.setObject(r_image, forKey: url as AnyObject)
+                                self.petImage.image = r_image
+                                self.petImage.beutify()
                             }
                         }
                     }

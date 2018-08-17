@@ -18,6 +18,13 @@
 		DB25905021262D3E00B9E8D0 /* PetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB25904F21262D3E00B9E8D0 /* PetCell.swift */; };
 		DB25905321262D9D00B9E8D0 /* Extension+MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB25905221262D9D00B9E8D0 /* Extension+MainVC.swift */; };
 		DB2590552126422700B9E8D0 /* Extension + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2590542126422700B9E8D0 /* Extension + String.swift */; };
+		DB25905721264EA900B9E8D0 /* ImgViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB25905621264EA900B9E8D0 /* ImgViewHelper.swift */; };
+		DB2590592126534000B9E8D0 /* Extension + UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2590582126534000B9E8D0 /* Extension + UIImage.swift */; };
+		DB25905B212659E100B9E8D0 /* ThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB25905A212659E100B9E8D0 /* ThemeProtocol.swift */; };
+		DB25905D21265A0F00B9E8D0 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB25905C21265A0F00B9E8D0 /* Theme.swift */; };
+		DB25905F21265ACA00B9E8D0 /* LightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB25905E21265ACA00B9E8D0 /* LightTheme.swift */; };
+		DB25906121265AD500B9E8D0 /* DarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB25906021265AD500B9E8D0 /* DarkTheme.swift */; };
+		DB25906321265F6F00B9E8D0 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB25906221265F6F00B9E8D0 /* SettingsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +43,13 @@
 		DB25904F21262D3E00B9E8D0 /* PetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCell.swift; sourceTree = "<group>"; };
 		DB25905221262D9D00B9E8D0 /* Extension+MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+MainVC.swift"; sourceTree = "<group>"; };
 		DB2590542126422700B9E8D0 /* Extension + String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + String.swift"; sourceTree = "<group>"; };
+		DB25905621264EA900B9E8D0 /* ImgViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgViewHelper.swift; sourceTree = "<group>"; };
+		DB2590582126534000B9E8D0 /* Extension + UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIImage.swift"; sourceTree = "<group>"; };
+		DB25905A212659E100B9E8D0 /* ThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeProtocol.swift; sourceTree = "<group>"; };
+		DB25905C21265A0F00B9E8D0 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		DB25905E21265ACA00B9E8D0 /* LightTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTheme.swift; sourceTree = "<group>"; };
+		DB25906021265AD500B9E8D0 /* DarkTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkTheme.swift; sourceTree = "<group>"; };
+		DB25906221265F6F00B9E8D0 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				DB25904F21262D3E00B9E8D0 /* PetCell.swift */,
+				DB25905621264EA900B9E8D0 /* ImgViewHelper.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -122,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				DB259037212620B600B9E8D0 /* MainVC.swift */,
+				DB25906221265F6F00B9E8D0 /* SettingsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -130,6 +146,10 @@
 			isa = PBXGroup;
 			children = (
 				DB25904B212621BA00B9E8D0 /* Constants.swift */,
+				DB25905A212659E100B9E8D0 /* ThemeProtocol.swift */,
+				DB25905C21265A0F00B9E8D0 /* Theme.swift */,
+				DB25905E21265ACA00B9E8D0 /* LightTheme.swift */,
+				DB25906021265AD500B9E8D0 /* DarkTheme.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -139,6 +159,7 @@
 			children = (
 				DB25905221262D9D00B9E8D0 /* Extension+MainVC.swift */,
 				DB2590542126422700B9E8D0 /* Extension + String.swift */,
+				DB2590582126534000B9E8D0 /* Extension + UIImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -255,13 +276,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB2590592126534000B9E8D0 /* Extension + UIImage.swift in Sources */,
 				DB2590552126422700B9E8D0 /* Extension + String.swift in Sources */,
 				DB259038212620B600B9E8D0 /* MainVC.swift in Sources */,
 				DB25905021262D3E00B9E8D0 /* PetCell.swift in Sources */,
+				DB25905D21265A0F00B9E8D0 /* Theme.swift in Sources */,
+				DB25906121265AD500B9E8D0 /* DarkTheme.swift in Sources */,
 				DB259036212620B600B9E8D0 /* AppDelegate.swift in Sources */,
+				DB25905B212659E100B9E8D0 /* ThemeProtocol.swift in Sources */,
 				DB25904C212621BA00B9E8D0 /* Constants.swift in Sources */,
 				DB25904E212623DD00B9E8D0 /* DogBreedModel.swift in Sources */,
+				DB25905721264EA900B9E8D0 /* ImgViewHelper.swift in Sources */,
+				DB25905F21265ACA00B9E8D0 /* LightTheme.swift in Sources */,
 				DB25905321262D9D00B9E8D0 /* Extension+MainVC.swift in Sources */,
+				DB25906321265F6F00B9E8D0 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
