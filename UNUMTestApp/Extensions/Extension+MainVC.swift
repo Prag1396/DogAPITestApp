@@ -26,6 +26,7 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
                     self.limit = self.index + (self.totalEnteries - self.dogbreedArray.count)
                 }
             }
+            
             self.downloadDetails {
                 self.perform(#selector(self.loadtable), with: nil, afterDelay: 1.0)
             }

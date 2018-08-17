@@ -74,6 +74,8 @@ class MainVC: UIViewController {
                     
                     let petData = DogBreedModel(breed: breed, imageURL: url)
                     self.dogbreedArray.append(petData)
+                    
+                    
                     downloadComplete()
                 }
                 self.index = self.index + 1
